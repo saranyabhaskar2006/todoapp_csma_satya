@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/api/todos", todoRoutes);
 
 mongoose
-  .connect("mongodb+srv://saranya:saranya123@cluster0.dmqhpam.mongodb.net/saranya")
+  .connect("mongodb+srv://saranya:saranya123@cluster0.dmqhpam.mongodb.net/")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
